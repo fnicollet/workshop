@@ -56,6 +56,7 @@ tutorial, it is expected, that you place the data in
 .. code-block:: bash
 
     # create the SRTM DEM dataset
+    cd ~/mapproxy/datasets/srtm
     generatevrtwo N50E014.tif /var/vts/mapproxy/datasets/srtm --resampling dem --tiliseSize 1024x1024
     generatevrtwo N50E014.tif /var/vts/mapproxy/datasets/srtm.min --resampling min --tiliseSize 1024x1024
     generatevrtwo N50E014.tif /var/vts/mapproxy/datasets/srtm.max --resampling max --tiliseSize 1024x1024
@@ -65,6 +66,7 @@ tutorial, it is expected, that you place the data in
     ln -s srtm.max/dataset srtm/dem.max
     
     # create Jensten dataset
+    cd ~/mapproxy/datasets/jenstejn-dem
     generatevrtwo jenstejn-dem.tif /var/vts/mapproxy/datasets/jenstejn-dem --resampling dem --tiliseSize 1024x1024
     generatevrtwo jenstejn-dem.tif /var/vts/mapproxy/datasets/jenstejn-dem.min --resampling min --tiliseSize 1024x1024
     generatevrtwo jenstejn-dem.tif /var/vts/mapproxy/datasets/jenstejn-dem.max --resampling max --tiliseSize 1024x1024
